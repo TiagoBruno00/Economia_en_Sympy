@@ -1,13 +1,33 @@
-# Economia_en_Sympy
-La idea de este repositorio es mostrar la utilidad de la librería Sympy de Python tanto para modelos de teoría económica como para aplicaciones econométricas. 
+# Economia en Sympy
+Este repositorio demuestra la potencia de la librería **SymPy** para la resolución de modelos de teoría económica y aplicaciones econométricas. El objetivo es automatizar el álgebra compleja, resolver sistemas dinámicos y optimizar funciones de pérdida mediante cálculo simbólico.
 
-En primer lugar, se desarrolla una implementación del trabajo de Brainard (1967). El autor argumenta que la existencia de incertidumbre sobre la respuesta real de la economía a medidas de política hace que los *policymakers* tengan incentivos a actuar con cautela: implementar «medidas parciales» o graduales en lugar de grandes cambios discretos. Esto ocurre porque, frente a la incertidumbre sobre los efectos de una política, la pérdida esperada asociada a un cambio grande puede ser mayor que la asociada a un cambio pequeño (la función de pérdida esperada es convexa bajo incertidumbre sobre la estructura económica). El resultado práctico es que la eficacia esperada de la política discreta disminuye y las autoridades optimizan adoptando respuestas atenuadas.
+## Contenido del Proyecto
 
-Luego, se resuelve en Python el intermezzo 14.1 del libro de Heijdra (2017). El capítulo 14 trata las teorías de crecimiento endógeno, revisando modelos en los que el crecimiento a largo plazo no es determinado exclusivamente por factores exógenos (como la tasa de progreso tecnológico en Solow), sino por decisiones y características internas del sistema —por ejemplo, inversión en capital humano, I+D, externalidades de acumulación de conocimiento, y rendimientos no decrecientes en ciertos sectores. Heijdra presenta formulaciones microfundamentadas (por ejemplo, modelos AK, modelos con spillovers de conocimiento, y modelos de Schumpeteriano/innovación), discute condiciones de equilibrio y las implicancias de política (subsidios a I+D, provisión pública de bienes que favorecen externalidades, etc.), y muestra comparaciones con modelos de crecimiento exógeno. El capítulo está orientado a estudiantes avanzados y combina derivaciones formales con interpretación económica.
+### 1. Incertidumbre y Política Económica (Brainard, 1967)
+Implementación del modelo clásico de **William Brainard**.
+- **El problema:** La incertidumbre sobre la estructura de la economía genera incentivos para que los *policymakers* actúen con cautela ("gradualismo").
+- **La solución:** Se demuestra computacionalmente cómo la función de pérdida esperada se vuelve convexa bajo incertidumbre, llevando a respuestas de política atenuadas en lugar de cambios discretos grandes.
 
-Por último, se presenta una clase breve, que expuse como adscrito a la cátedra de Econometría 3. Esta aplicación está orientada a explicar el algoritmo de Newton-Raphson siguiendo el ejemplo del capítulo 12 de Judge et al. (1988), en el caso de mínimos cuadrados no lineales. Esto fue útil en el curso, ya que es una buena introducción a las estimaciones de series temporales no estacionarias.
+### 2. Crecimiento Endógeno con Capital Público (Heijdra, 2017)
+Resolución del **Intermezzo 14.1** de *Foundations of Modern Macroeconomics*.
+- **El modelo:** Un modelo de crecimiento endógeno donde el capital público genera externalidades positivas en la producción.
+- **Implementación:** Se resuelven simbólicamente:
+  - El Hamiltoniano y las condiciones de primer orden (CPO).
+  - Las ecuaciones de Euler del consumidor y la firma.
+  - La **linealización del sistema dinámico** (Matriz Jacobiana) para analizar la estabilidad del equilibrio a largo plazo.
+
+### 3. Algoritmo Newton-Raphson para Mínimos Cuadrados No Lineales
+Material didáctico presentado en la cátedra de **Econometría III**.
+- **Aplicación:** Estimación de parámetros mediante la minimización de la Suma de Cuadrados de los Residuos (SSR).
+- **Técnica:** Se utiliza SymPy para calcular dinámicamente el **Gradiente** y el **Hessiano** de la función objetivo, automatizando el algoritmo de optimización sin necesidad de derivar manualmente.
+
+## Herramientas
+* **Python 3.x**
+* **SymPy:** Cálculo simbólico y álgebra computacional.
+* **NumPy:** Computación numérica (vía `lambdify`).
+* **Matplotlib:** Visualización de resultados y fronteras de optimización.
 
 ## Referencias
-* Brainard, W. C. (1967). Uncertainty and the effectiveness of policy. American Economic Review, 57(2), 411–425.
-* Heijdra, B. J. (2017). Endogenous economic growth (Cap. 14). En Foundations of Modern Macroeconomics (3.ª ed., pp. 449–493). Oxford University Press.
-* Judge, G. G., Hill, R. C., Griffiths, W. E., Lütkepohl, H., & Lee, T.-C. (1988). Nonlinear least squares and nonlinear maximum likelihood estimation (Cap. 12). En Introduction to the Theory and Practice of Econometrics (2.ª ed., pp. 497–570). John Wiley & Sons.
+1.  **Brainard, W. C. (1967).** Uncertainty and the effectiveness of policy. *American Economic Review*, 57(2), 411–425.
+2.  **Heijdra, B. J. (2017).** Endogenous economic growth (Cap. 14). En *Foundations of Modern Macroeconomics* (3.ª ed.). Oxford University Press.
+3.  **Judge, G. G., et al. (1988).** Nonlinear least squares and nonlinear maximum likelihood estimation (Cap. 12). En *Introduction to the Theory and Practice of Econometrics*. John Wiley & Sons.
