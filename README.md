@@ -22,7 +22,7 @@ Esta es una clase que realicé para la cátedra de **Econometría III** en mi ro
 - **Técnica:** Se utiliza SymPy para calcular dinámicamente el **Gradiente** y el **Hessiano** de la función objetivo, automatizando el algoritmo de optimización sin necesidad de derivar manualmente.
 
 ## Herramientas
-* **Python 3.x**
+* **Python 3**
 * **SymPy:** Cálculo simbólico y álgebra computacional.
 * **NumPy:** Computación numérica (vía `lambdify`).
 * **Matplotlib:** Visualización de resultados y fronteras de optimización.
