@@ -8,6 +8,6 @@ Luego, se resuelve en Python el intermezzo 14.1 del libro de Heijdra (2017). El 
 Por último, se presenta una clase breve, que expuse como adscrito a la cátedra de Econometría 3. Esta aplicación está orientada a explicar el algoritmo de Newton-Raphson siguiendo el ejemplo del capítulo 12 de Judge et al. (1988), en el caso de mínimos cuadrados no lineales. Esto fue útil en el curso, ya que es una buena introducción a las estimaciones de series temporales no estacionarias.
 
 ## Referencias
-Brainard, W. C. (1967). Uncertainty and the effectiveness of policy. American Economic Review, 57(2), 411–425.
-Heijdra, B. J. (2017). Endogenous economic growth (Cap. 14). En Foundations of Modern Macroeconomics (3.ª ed., pp. 449–493). Oxford University Press.
-Judge, G. G., Hill, R. C., Griffiths, W. E., Lütkepohl, H., & Lee, T.-C. (1988). Nonlinear least squares and nonlinear maximum likelihood estimation (Cap. 12). En Introduction to the Theory and Practice of Econometrics (2.ª ed., pp. 497–570). John Wiley & Sons.
+* Brainard, W. C. (1967). Uncertainty and the effectiveness of policy. American Economic Review, 57(2), 411–425.
+* Heijdra, B. J. (2017). Endogenous economic growth (Cap. 14). En Foundations of Modern Macroeconomics (3.ª ed., pp. 449–493). Oxford University Press.
+* Judge, G. G., Hill, R. C., Griffiths, W. E., Lütkepohl, H., & Lee, T.-C. (1988). Nonlinear least squares and nonlinear maximum likelihood estimation (Cap. 12). En Introduction to the Theory and Practice of Econometrics (2.ª ed., pp. 497–570). John Wiley & Sons.
