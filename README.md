@@ -16,7 +16,7 @@ Resolución del **Intermezzo 14.1** de *Foundations of Modern Macroeconomics*.
   - Las ecuaciones de Euler del consumidor y la firma.
   - La **linealización del sistema dinámico** (Matriz Jacobiana) para analizar la estabilidad del equilibrio a largo plazo.
 
-### 3. Algoritmo Newton-Raphson para Mínimos Cuadrados No Lineales
+### 3. Algoritmo Newton-Raphson para Mínimos Cuadrados No Lineales (Judge et al., 1988)
 Material didáctico presentado en la cátedra de **Econometría III**.
 - **Aplicación:** Estimación de parámetros mediante la minimización de la Suma de Cuadrados de los Residuos (SSR).
 - **Técnica:** Se utiliza SymPy para calcular dinámicamente el **Gradiente** y el **Hessiano** de la función objetivo, automatizando el algoritmo de optimización sin necesidad de derivar manualmente.
