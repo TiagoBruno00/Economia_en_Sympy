@@ -9,7 +9,7 @@ Implementación del modelo clásico de **William Brainard**.
 - **La solución:** Se demuestra computacionalmente cómo la función de pérdida esperada se vuelve convexa bajo incertidumbre, llevando a respuestas de política atenuadas en lugar de cambios discretos grandes.
 
 ### 2. Crecimiento Endógeno con Capital Público (Heijdra, 2017)
-Resolución del **Intermezzo 14.1** de *Foundations of Modern Macroeconomics*.
+Resolución del **Intermezzo 14.1** de *Foundations of Modern Macroeconomics*, como tarea en mi puesto de auxiliar de investigación.
 - **El modelo:** Un modelo de crecimiento endógeno donde el capital público genera externalidades positivas en la producción.
 - **Implementación:** Se resuelven simbólicamente:
   - El Hamiltoniano y las condiciones de primer orden (CPO).
@@ -17,7 +17,7 @@ Resolución del **Intermezzo 14.1** de *Foundations of Modern Macroeconomics*.
   - La **linealización del sistema dinámico** (Matriz Jacobiana) para analizar la estabilidad del equilibrio a largo plazo.
 
 ### 3. Algoritmo Newton-Raphson para Mínimos Cuadrados No Lineales (Judge et al., 1988)
-Material didáctico presentado en la cátedra de **Econometría III**.
+Esta es una clase que realicé para la cátedra de **Econometría III** en mi rol de adscripto.
 - **Aplicación:** Estimación de parámetros mediante la minimización de la Suma de Cuadrados de los Residuos (SSR).
 - **Técnica:** Se utiliza SymPy para calcular dinámicamente el **Gradiente** y el **Hessiano** de la función objetivo, automatizando el algoritmo de optimización sin necesidad de derivar manualmente.
 
