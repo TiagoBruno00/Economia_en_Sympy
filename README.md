@@ -1,2 +1,13 @@
 # Economia_en_Sympy
-Desarrollo de modelos económicos usando la librería Sympy de Python
+La idea de este repositorio es mostrar la utilidad de la librería Sympy de Python tanto para modelos de teoría económica como para aplicaciones econométricas. 
+
+En primer lugar, se desarrolla una implementación del trabajo de Brainard (1967). El autor argumenta que la existencia de incertidumbre sobre la respuesta real de la economía a medidas de política hace que los *policymakers* tengan incentivos a actuar con cautela: implementar «medidas parciales» o graduales en lugar de grandes cambios discretos. Esto ocurre porque, frente a la incertidumbre sobre los efectos de una política, la pérdida esperada asociada a un cambio grande puede ser mayor que la asociada a un cambio pequeño (la función de pérdida esperada es convexa bajo incertidumbre sobre la estructura económica). El resultado práctico es que la eficacia esperada de la política discreta disminuye y las autoridades optimizan adoptando respuestas atenuadas.
+
+Luego, se resuelve en Python el intermezzo 14.1 del libro de Heijdra (2017). El capítulo 14 trata las teorías de crecimiento endógeno, revisando modelos en los que el crecimiento a largo plazo no es determinado exclusivamente por factores exógenos (como la tasa de progreso tecnológico en Solow), sino por decisiones y características internas del sistema —por ejemplo, inversión en capital humano, I+D, externalidades de acumulación de conocimiento, y rendimientos no decrecientes en ciertos sectores. Heijdra presenta formulaciones microfundamentadas (por ejemplo, modelos AK, modelos con spillovers de conocimiento, y modelos de Schumpeteriano/innovación), discute condiciones de equilibrio y las implicancias de política (subsidios a I+D, provisión pública de bienes que favorecen externalidades, etc.), y muestra comparaciones con modelos de crecimiento exógeno. El capítulo está orientado a estudiantes avanzados y combina derivaciones formales con interpretación económica.
+
+Por último, se presenta una clase breve, que expuse como adscrito a la cátedra de Econometría 3. Esta aplicación está orientada a explicar el algoritmo de Newton-Raphson siguiendo el ejemplo del capítulo 12 de Judge et al. (1988), en el caso de mínimos cuadrados no lineales. Esto fue útil en el curso, ya que es una buena introducción a las estimaciones de series temporales no estacionarias.
+
+## Referencias
+Brainard, W. C. (1967). Uncertainty and the effectiveness of policy. American Economic Review, 57(2), 411–425.
+Heijdra, B. J. (2017). Endogenous economic growth (Cap. 14). En Foundations of Modern Macroeconomics (3.ª ed., pp. 449–493). Oxford University Press.
+Judge, G. G., Hill, R. C., Griffiths, W. E., Lütkepohl, H., & Lee, T.-C. (1988). Nonlinear least squares and nonlinear maximum likelihood estimation (Cap. 12). En Introduction to the Theory and Practice of Econometrics (2.ª ed., pp. 497–570). John Wiley & Sons.
